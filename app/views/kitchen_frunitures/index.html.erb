@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Furniture Magazine</title>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <style>
+    ul.hr {
+        margin: 0; /* Обнуляем значение отступов */
+        padding: 4px; /* Значение полей */
+    }
+    ul.hr li {
+        display: inline; /* Отображать как строчный элемент */
+        margin-right: 5px; /* Отступ слева */
+        border: 1px solid #000; /* Рамка вокруг текста */
+        padding: 3px; /* Поля вокруг текста */
+    }
+    body{
+        background: #081624;    
+        z-index: -2;
+        -webkit-box-shadow: 0 0 9px 3px rgba(226, 30, 228, 0.24);
+        box-shadow: 0 0 9px 3px rgba(226, 30, 228, 0.24);
+        color: #fff;
+        text-decoration: none;
+    }
+    a{
+      text-decoration: none;
+      color: #ddd;
+    }
+    a hover{
+      
+      color: blue;
+    }
+    </style>
+</head>
+<body>
+
+	<header class="">
+		<div class="">
+
+			<div class="" >
+			
+				<nav class="" style='display:flex; padding:15px; margin-left: 10em;'>
+					
+                    <br>
+					<ul class="hr" style='display:flex;'>
+						<li><a href="/">Home</a></li>
+						<li><a href="/furnitures">Furniture</a></li>
+						<li><a href="/kitchen_frunitures">Kitchen furniture</a></li>
+						<li><a href="/salon/index">Contact</a></li>
+					</ul>
+                    <br>
+
+                    <div class="" style='padding-top:5px; margin-left: 40em'>
+						<a href="">Login</a> / <a href="">Register</a>
+					</div>
+                    <br>
+
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div style=" position: relative; left:40%; color: #fff">
+    <p style="color: green"><%= notice %></p>
+
+    <h1>Kitchen frunitures</h1>
+    
+    <div id="kitchen_frunitures">
+      <% @kitchen_frunitures.each do |kitchen_fruniture| %>
+        <%= render kitchen_fruniture %>
+        <p>
+          <%= link_to "Show this kitchen fruniture", kitchen_fruniture %>
+        </p>
+      <% end %>
+    </div>
+    
+    <%= link_to "New kitchen fruniture", new_kitchen_fruniture_path %>
+    <p style=" padding: 200px"></p>
+  </div>
+
+	</body>
+</html>

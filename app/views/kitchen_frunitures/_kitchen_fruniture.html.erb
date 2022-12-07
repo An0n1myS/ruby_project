@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Furniture Magazine</title>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <style>
+    ul.hr {
+        margin: 0; /* Обнуляем значение отступов */
+        padding: 4px; /* Значение полей */
+    }
+    ul.hr li {
+        display: inline; /* Отображать как строчный элемент */
+        margin-right: 5px; /* Отступ слева */
+        border: 1px solid #000; /* Рамка вокруг текста */
+        padding: 3px; /* Поля вокруг текста */
+    }
+    body{
+        background: #081624;    
+        z-index: -2;
+        -webkit-box-shadow: 0 0 9px 3px rgba(226, 30, 228, 0.24);
+        box-shadow: 0 0 9px 3px rgba(226, 30, 228, 0.24);
+    }
+    a{
+      text-decoration: none;
+      color: #ddd;
+    }
+    a hover{
+      
+      color: blue;
+    }
+    </style>
+</head>
+<body>
+
+	<header class="">
+		<div class="">
+
+			<div class="" >
+			
+				<nav class="" style='display:flex; padding:15px; margin-left: 10em;'>
+					
+                    <br>
+					<ul class="hr" style='display:flex;'>
+						<li><a href="/">Home</a></li>
+						<li><a href="/furnitures">Furniture</a></li>
+						<li><a href="/kitchen_frunitures">Kitchen furniture</a></li>
+						<li><a href="/salon/index">Contact</a></li>
+					</ul>
+                    <br>
+
+                    <div class="" style='padding-top:5px; margin-left: 40em'>
+						<a href="">Login</a> / <a href="">Register</a>
+					</div>
+                    <br>
+
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+
+    <div style=" position: relative; left:45%; color: #fff">
+      <div id="<%= dom_id kitchen_fruniture %>">
+        <p>
+          <strong>Name:</strong>
+          <%= kitchen_fruniture.name %>
+        </p>
+      
+        <p>
+          <strong>Title:</strong>
+          <%= kitchen_fruniture.title %>
+        </p>
+      
+        <p>
+          <strong>Content:</strong>
+          <%= kitchen_fruniture.content %>
+        </p>
+      
+        <p>
+          <strong>Price:</strong>
+          <%= kitchen_fruniture.price %>
+        </p>
+      
+      </div>
+      <p style=" padding: 10px"></p>
+	</body>
+</html>

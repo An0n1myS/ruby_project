@@ -1,0 +1,2 @@
+module KitchenFrunituresHelper
+end

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @kitchen_fruniture %>
+
+<div>
+  <%= link_to "Edit this kitchen fruniture", edit_kitchen_fruniture_path(@kitchen_fruniture) %> |
+  <%= link_to "Back to kitchen frunitures", kitchen_frunitures_path %>
+
+  <%= button_to "Destroy this kitchen fruniture", @kitchen_fruniture, method: :delete %>
+</div>
